@@ -8,7 +8,11 @@ export type PostType = {
   body: string;
 };
 
-async function getPosts({pageParam}: {pageParam: number}): Promise<PostType[]> {
+async function getPosts({
+  pageParam,
+}: {
+  pageParam: number;
+}): Promise<PostType[]> {
   try {
     const response = await axios.get<PostType[]>(
       `https://jsonplaceholder.typicode.com/posts?_page=${pageParam}`
