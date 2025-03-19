@@ -1,6 +1,5 @@
-import { FormEvent, useState } from "react";
 import "./App.css";
-import { useQuery, QueryClient, useInfiniteQuery } from "@tanstack/react-query";
+import { useInfiniteQuery } from "@tanstack/react-query";
 import { getPosts } from "./utils/dataFetch";
 import PostItem from "./components/PostItem";
 
